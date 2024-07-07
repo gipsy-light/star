@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+     <link charset="UTF-8" rel="stylesheet" href="../css/common.css" type="text/css" /> 
+     
+    <!-- TODO: should we remove bootstrap (discuss with tt) -->
+    <title>Select Orders</title>
+</head>
+<body>
+<div style="margin-right:4%;margin-left:4%;margin-top:30px;">
+    <div id="list-block" class="dotted-border-block">
+        <h4>Подготовленные макеты<br><small>Отметьте, что напечатать/отправить в Корзину сейчас</small></h4>
+        <div class="row no-margin" style="" id="projects-list"></div>
+    </div>
+    <!--div class="dotted-border-block">
+        <h4>Загрузка изображений макетов <br><small>Будут загружаться в фоновом режиме, в это время вы можете формировать заказ, выбирать способ оплаты и доставку</small></h4>
+        <div class="row no-margin">
+            <div id="" class="col-xs-12 "></div>
+        </div>
+        <div class="row no-margin">
+            <div class="progress no-padding col-xs-10 col-xs-offset-1">
+                <div  id="photoUploadProgress" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0; overflow: show;">
+                </div>
+            </div>
+         </div>
+        <div class="row no-margin">
+            <div id="progressText" class="col-xs-7"></div>
+            <button id="runUploaderBtn" onclick="top.run_photoUploader()" class="btn col-xs-5" >Как там загрузка?</button>
+        </div>
+    </div>-->
+    <div id="auth-block" class="dotted-border-block">
+        <h4>Авторизация<br><small> необходима для учёта макетов и заказов</small></h4>
+        <div class="row no-margin">
+            <div id="authText" class="col-xs-7 ">Вы авторизованы как <strong> </strong>, заказ будет оформлен на этого пользователя.</div>
+            <button id="changeUserBtn">Сменить пользователя</button>
+        </div>
+    </div>
+    <div style="text-align: center">
+        <button id="sendBooksBtn"  class="sendbutton"><strong>Добавить заказ в Корзину</strong></button>
+    </div>
+</div>
+<br/><br/><br/>
+</body>
+<script>
+top.disableDragAndDrop(window);
+</script>
+</html>
